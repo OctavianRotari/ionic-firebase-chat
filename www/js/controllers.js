@@ -3,7 +3,7 @@ angular.module('mychat.controllers', [])
 .controller('LoginCtrl', function ($scope, $ionicModal, $state, $firebaseAuth, $ionicLoading, $rootScope) {
     //console.log('Login Controller Initialized');
 
-    var ref = new Firebase($scope.firebaseUrl);
+    var ref = new Firebase(firebaseUrl);
     var auth = $firebaseAuth(ref);
 
     $ionicModal.fromTemplateUrl('templates/signup.html', {
